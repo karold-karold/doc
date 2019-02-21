@@ -33,4 +33,5 @@ WEB interface
    yeti-ui-logs
    yeti-ui-system
    yeti-ui-regexp_replace
+   yeti-ui-data_import_export
 
