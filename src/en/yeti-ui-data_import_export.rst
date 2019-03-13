@@ -48,17 +48,22 @@ Import of data in Yeti is available from Working Areas (by pressing *Import* but
     -   *Script*    -   single-record selection list for choosing special pre-loaded into Yeti script for importing files with using special rules;
     -   *Unique columns values*     -   set of True/False checkboxes that are used for choosing field names that will be controlled during the import process: values in these fields should be unique for current importing session.
 
-After the filling of form that is described above and pressing *Import* button you will be redirected to the list of importing records. See example below.
+After the filling of form that is described above and pressing *Import* button you will be redirected to the list of imported records. See example below.
 
 .. figure:: images/import_records.png
        :scale: 100 %
        :align: center
        :alt: YETI Web interface - Import records
 
-.. note:: You should finish previous importing process before you can start importing of other type objects.
+.. note:: You should finish previous importing process before you can start import of other type objects.
 
 
-**TODO**
+Future actions with list of imported records are possible via following set of buttons on Working Area (these buttons are placed on *General management line*):
+
+       -      *Create new ones* -  Will create new records in the main Database on the basis of selected records in the list of imported records. In case of selecting records that are already available in the main Database (have same ids) these records will be ignored by importing procedure;
+       -      *Create and update*  - Will create new records in the main Database on the basis of selected records in the list of imported records. In case of selecting records that are already available in the main Database (have same ids) these records will be updated with new (imported) information by importing procedure;
+       -      *Only update* - Will update all existing in the main Database records with new (imported) information by importing procedure. In case of selecting records that are not presented in the main Database these records will be ignored.
+
 
 Export & Import: Format of the fields for different objects
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
